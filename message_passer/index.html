@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./js_favicon.png" type="image/x-icon" />
+	<title>Messaging Project</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: #6665ed;
+		}
+
+		.flex {
+			display: flex;
+		}
+
+		.flex-container {
+			height: 100vh;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.flex-box {
+			background-color: white;
+			height: 200px;
+			width: 400px;
+			border-radius: 10px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.damiTextBox {
+			border: 2px solid navy;
+			border-radius: 10px;
+			height: 12%;
+			width: 60%;
+			margin: 10px 0 10px 0;
+		}
+
+		.btn-styled {
+			border: grey 2px solid;
+			height: 40px;
+			width: 120px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="flex flex-container">
+		<form class="flex flex-box" action="">
+			<label>Enter the message to be sent :</label>
+			<input class="damiTextBox" type="text" placeholder="&nbsp;&nbsp;Message here... "id="messageBox"  />
+			<input class="btn-styled" type="button" value="Send Message" onclick="changeBgColor()" />
+			<div id="messageSuccess"></div>
+			<div id="output"></div>
+		</form>
+	</div>
+
+	<script src="messagePass.js"></script>
+</body>
+
+</html>
